@@ -14,7 +14,7 @@ const message_1 = document.querySelector('#message-1');
 const message_2 = document.querySelector('#message-2');
 
 function setWeather(val) {
-   fetch(`http://localhost:3000/weather?address=${val}`)
+   fetch(`/weather?address=${val}`)
       .then((res) => res.json())
       .then((data) => {
          if (data.error) {
