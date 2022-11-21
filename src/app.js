@@ -7,7 +7,7 @@ const { send } = require('process');
 
 // Get express function
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 // Define paths for Express config
 const publicPath = path.join(__dirname, '../public');

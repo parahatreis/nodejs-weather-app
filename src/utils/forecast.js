@@ -1,8 +1,8 @@
 const request = require('request');
-
+require('dotenv').config();
 
 const forecast = (lat, lon, callback) => {
-   const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a8c0fd891efc2eb4e61d1758af8a6db0`;
+   const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.APP_ID}`;
 
    request({
       url,
